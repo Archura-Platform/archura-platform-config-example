@@ -1,0 +1,66 @@
+{
+    "pre": [
+        {
+            "name": "io.archura.platform.SimplePreFilter",
+            "version": "0.0.1",
+            "config": {
+                "default": "default",
+                "extractor": {
+                    "remote": {
+                        "timeout": 100,
+                        "url": "http://multi-tenant-service/find-tenant-id/${ENVIRONMENT}"
+                    },
+                    "jwt": {
+                        "jpath": "$.tenantid",
+                        "groupName": "",
+                        "regex": ".*"
+                    },
+                    "host": {
+                        "groupName": "",
+                        "regex": ".*"
+                    },
+                    "header": {
+                        "name": "X-Tenant-ID",
+                        "groupName": "",
+                        "regex": ".*"
+                    },
+                    "path": {
+                        "index": 0,
+                        "groupName": "",
+                        "regex": ".*"
+                    },
+                    "query": {
+                        "name": "tenant_id",
+                        "groupName": "",
+                        "regex": ".*"
+                    }
+                },
+                "validator": {
+                    "remote": {
+                        "timeout": 100,
+                        "url": "http://tenant-validator-service/validate/${ENVIRONMENT}/${TENANT_ID}"
+                    },
+                    "list": {
+                        "tenants": [
+                            1694874,
+                            8877479,
+                            4876554,
+                            7102353
+                        ]
+                    },
+                    "regex": {
+                        "groupName": "",
+                        "regex": "^[0-9]*$"
+                    }
+                }
+            }
+        }
+    ],
+    "post": [
+        {
+            "name": "io.archura.platform.SimplePostFilter",
+            "version": "0.0.1",
+            "config": {}
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "pre": [
+        {
+            "name": "io.archura.platform.SimplePreFilter",
+            "version": "0.0.1",
+            "config": {
+                "*": {
+                    "*": {
+                        "match": {
+                            "path": {
+                                "regex": ".*"
+                            }
+                        },
+                        "extract": {
+                            "path": {
+                                "index": 0,
+                                "groupName": "",
+                                "regex": ".*"
+                            }
+                        },
+                        "map": {
+                            "url": "http://${extract.path}-service/${request.path}?${request.query}"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "post": [
+        {
+            "name": "io.archura.platform.SimplePostFilter",
+            "version": "0.0.1",
+            "config": {}
+        }
+    ],
+    "routeFunctions": {
+        "*": {
+            "name": "io.archura.platform.SimpleFunction",
+            "version": "0.0.1",
+            "config": {
+                "key1": "value1",
+                "key2": "value2"
+            }
+        }
+    }
+}
