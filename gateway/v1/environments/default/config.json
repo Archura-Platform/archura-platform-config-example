@@ -4,7 +4,6 @@
             "name": "io.archura.platform.SimplePreFilter",
             "version": "0.0.1",
             "config": {
-                "default": "default",
                 "extractor": {
                     "remote": {
                         "timeout": 100,
