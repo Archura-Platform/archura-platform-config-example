@@ -1,7 +1,7 @@
 {
     "pre": [
         {
-            "name": "io.archura.platform.SimplePreFilter",
+            "name": "io.archura.platform.global.pre.filter.MultiEnvironment",
             "version": "0.0.1",
             "config": {
                 "host": {
@@ -15,7 +15,7 @@
                 },
                 "path": {
                     "groupName": "",
-                    "regex": ".*"
+                    "regex": "(?:[^\\/]|\\/\\/)+"
                 }
             }
         },
@@ -39,5 +39,6 @@
             "version": "0.0.1",
             "config": {}
         }
-    ]
+    ],
+    "logLevel": "debug"
 }
