@@ -33,13 +33,17 @@
             "config": {}
         }
     ],
-    "routeFunctions": {
+    "routes": {
         "*": {
-            "name": "io.archura.platform.SimpleFunction",
-            "version": "0.0.1",
-            "config": {
-                "key1": "value1",
-                "key2": "value2"
+            "pre": [],
+            "post": [],
+            "function": {
+                "name": "io.archura.platform.SimpleFunction",
+                "version": "0.0.1",
+                "config": {
+                    "key1": "value1",
+                    "key2": "value2"
+                }
             }
         }
     }
