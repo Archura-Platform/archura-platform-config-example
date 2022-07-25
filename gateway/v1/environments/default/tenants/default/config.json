@@ -41,7 +41,7 @@
                 "name": "io.archura.platform.SimpleFunction",
                 "version": "0.0.1",
                 "config": {
-                    "key1": "value1",
+                    "JSON_URL": "http://192.168.68.118:9090/sono.json",
                     "key2": "value2"
                 }
             }
