@@ -1,0 +1,32 @@
+{
+  "environments": {
+    "default": {
+      "tenants": {
+        "default": {
+          "functions": [
+            {
+              "name": "io.archura.platform.ImmediateFunction",
+              "version": "0.0.1",
+              "config": {
+                "logLevel": "info"
+              }
+            }
+          ],
+          "config": {
+            "logLevel": "info"
+          }
+        },
+        "tenant01": {},
+        "tenant02": {}
+      },
+      "config": {
+        "logLevel": "info"
+      }
+    },
+    "test.archura.io": {},
+    "staging.archura.io": {}
+  },
+  "config": {
+    "logLevel": "info"
+  }
+}

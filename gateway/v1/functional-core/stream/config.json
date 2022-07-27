@@ -1,0 +1,43 @@
+{
+  "environments": {
+    "default": {
+      "tenants": {
+        "default": {
+          "consumers": [
+            {
+              "name": "io.archura.platform.MovieConsumer",
+              "version": "0.0.1",
+              "topic": "movies",
+              "logLevel": "debug",
+              "config": {
+              }
+            }
+          ],
+          "producers": [
+            {
+              "name": "io.archura.platform.MovieProducer",
+              "version": "0.0.1",
+              "topic": "movies",
+              "logLevel": "debug",
+              "config": {
+              }
+            }
+          ],
+          "config": {
+            "logLevel": "info"
+          }
+        },
+        "tenant02": {},
+        "tenant03": {}
+      },
+      "config": {
+        "logLevel": "info"
+      }
+    },
+    "test.archura.io": {},
+    "staging.archura.io": {}
+  },
+  "config": {
+    "logLevel": "info"
+  }
+}

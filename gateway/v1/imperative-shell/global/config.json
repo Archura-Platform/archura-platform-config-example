@@ -40,5 +40,7 @@
             "config": {}
         }
     ],
-    "logLevel": "debug"
+    "config": {
+        "logLevel": "debug"
+    }
 }

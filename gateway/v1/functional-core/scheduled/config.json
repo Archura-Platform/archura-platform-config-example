@@ -1,0 +1,38 @@
+{
+  "environments": {
+    "default": {
+      "tenants": {
+        "default": {
+          "functions": [
+            {
+              "name": "io.archura.platform.ScheduledFunction",
+              "version": "0.0.1",
+              "cron": "0 15 10 15 * ?",
+              "zone": "Europe/Paris",
+              "fixedDelay": 1000,
+              "fixedRate": 1000,
+              "initialDelay": 1000,
+              "timeUnit": "MILLISECONDS",
+              "logLevel": "debug",
+              "config": {
+              }
+            }
+          ],
+          "config": {
+            "logLevel": "info"
+          }
+        },
+        "tenant01": {},
+        "tenant02": {}
+      },
+      "config": {
+        "logLevel": "info"
+      }
+    },
+    "test.archura.io": {},
+    "staging.archura.io": {}
+  },
+  "config": {
+    "logLevel": "info"
+  }
+}
