@@ -5,10 +5,12 @@
         "default": {
           "functions": [
             {
-              "name": "io.archura.platform.ImmediateFunction",
+              "name": "io.archura.platform.functionalcore.iffe.IFFEFunction",
               "version": "0.0.1",
+              "logLevel": "info",
               "config": {
-                "logLevel": "info"
+                "key1": "value1",
+                "key2": "value2"
               }
             }
           ],

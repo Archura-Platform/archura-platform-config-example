@@ -5,7 +5,7 @@
         "default": {
           "functions": [
             {
-              "name": "io.archura.platform.ScheduledFunction",
+              "name": "io.archura.platform.functionalcore.scheduled.ScheduledFunction",
               "version": "0.0.1",
               "cron": "0 15 10 15 * ?",
               "zone": "Europe/Paris",

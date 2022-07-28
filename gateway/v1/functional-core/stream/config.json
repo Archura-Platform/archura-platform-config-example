@@ -5,7 +5,7 @@
         "default": {
           "consumers": [
             {
-              "name": "io.archura.platform.MovieConsumer",
+              "name": "io.archura.platform.functionalcore.stream.MovieConsumer",
               "version": "0.0.1",
               "topic": "movies",
               "logLevel": "debug",
@@ -15,7 +15,7 @@
           ],
           "producers": [
             {
-              "name": "io.archura.platform.MovieProducer",
+              "name": "io.archura.platform.functionalcore.stream.MovieProducer",
               "version": "0.0.1",
               "topic": "movies",
               "logLevel": "debug",

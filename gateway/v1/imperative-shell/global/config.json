@@ -1,7 +1,7 @@
 {
     "pre": [
         {
-            "name": "io.archura.platform.global.pre.filter.MultiEnvironment",
+            "name": "io.archura.platform.imperativeshell.global.pre.filter.MultiEnvironment",
             "version": "0.0.1",
             "config": {
                 "host": {
@@ -20,7 +20,7 @@
             }
         },
         {
-            "name": "io.archura.platform.SimplePreFilter",
+            "name": "io.archura.platform.imperativeshell.pre.filter.SimplePreFilter",
             "version": "0.0.1",
             "config": {
                 "ip": [
@@ -35,7 +35,7 @@
     ],
     "post": [
         {
-            "name": "io.archura.platform.SimplePostFilter",
+            "name": "io.archura.platform.imperativeshell.post.filter.SimplePostFilter",
             "version": "0.0.1",
             "config": {}
         }

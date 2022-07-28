@@ -1,7 +1,7 @@
 {
     "pre": [
         {
-            "name": "io.archura.platform.SimplePreFilter",
+            "name": "io.archura.platform.imperativeshell.pre.filter.SimplePreFilter",
             "version": "0.0.1",
             "config": {
                 "*": {
@@ -28,7 +28,7 @@
     ],
     "post": [
         {
-            "name": "io.archura.platform.SimplePostFilter",
+            "name": "io.archura.platform.imperativeshell.post.filter.SimplePostFilter",
             "version": "0.0.1",
             "config": {}
         }
@@ -38,7 +38,7 @@
             "pre": [],
             "post": [],
             "function": {
-                "name": "io.archura.platform.SimpleFunction",
+                "name": "io.archura.platform.imperativeshell.handler.SimpleFunction",
                 "version": "0.0.1",
                 "config": {
                     "JSON_URL": "http://192.168.68.118:9090/sono.json",
