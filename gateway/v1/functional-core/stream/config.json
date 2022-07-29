@@ -13,16 +13,6 @@
               }
             }
           ],
-          "producers": [
-            {
-              "name": "io.archura.platform.functionalcore.stream.MovieProducer",
-              "version": "0.0.1",
-              "topic": "movies",
-              "logLevel": "debug",
-              "config": {
-              }
-            }
-          ],
           "config": {
             "logLevel": "info"
           }

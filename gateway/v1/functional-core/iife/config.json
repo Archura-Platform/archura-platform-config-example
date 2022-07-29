@@ -7,7 +7,7 @@
             {
               "name": "io.archura.platform.functionalcore.iffe.IFFEFunction",
               "version": "0.0.1",
-              "logLevel": "info",
+              "logLevel": "debug",
               "config": {
                 "key1": "value1",
                 "key2": "value2"

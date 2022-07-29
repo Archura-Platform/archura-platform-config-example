@@ -42,7 +42,7 @@
                 "version": "0.0.1",
                 "config": {
                     "JSON_URL": "http://192.168.68.118:9090/sono.json",
-                    "key2": "value2"
+                    "topicName": "movies"
                 }
             }
         }

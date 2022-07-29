@@ -41,6 +41,9 @@
         }
     ],
     "config": {
-        "logLevel": "debug"
+        "logLevel": "debug",
+        "redisUrl": "redis://:uhqBjUoHDLkZo7tk6wTtvl3ToViypPhS@redis-15068.c269.eu-west-1-3.ec2.cloud.redislabs.com:15068/0",
+        "codeRepositoryUrl": "http://localhost:9080",
+        "archuraPlatformToken": "THIS-IS-A-TOKEN"
     }
 }
