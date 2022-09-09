@@ -5,7 +5,7 @@
         "default": {
           "functions": [
             {
-              "name": "io.archura.platform.functionalcore.iffe.IFFEFunction",
+              "name": "io.archura.platform.functionalcore.iife.IIFEFunction",
               "version": "0.0.1",
               "logLevel": "debug",
               "config": {
