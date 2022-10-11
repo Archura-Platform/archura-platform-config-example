@@ -7,8 +7,8 @@
             {
               "name": "io.archura.platform.functionalcore.scheduled.ScheduledFunction",
               "version": "0.0.1",
-              "cron": "0/10 * * * * ?",
-              "zone": "Europe/Paris",
+              "delay": 10,
+              "timeUnit": "SECONDS",
               "logLevel": "debug",
               "config": {
                 "key1": "value1"
