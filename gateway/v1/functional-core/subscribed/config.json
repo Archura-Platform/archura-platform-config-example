@@ -1,0 +1,41 @@
+{
+  "environments": {
+    "default": {
+      "tenants": {
+        "default": {
+          "subscribers": [
+            {
+              "name": "io.archura.platform.functionalcore.subscription.MessageSubscriptionConsumer",
+              "version": "0.0.1",
+              "channel": "message",
+              "logLevel": "debug",
+              "config": {
+              }
+            },
+            {
+              "name": "io.archura.platform.functionalcore.subscription.MessageSubscriptionConsumer",
+              "version": "0.0.1",
+              "channel": "sms",
+              "logLevel": "debug",
+              "config": {
+              }
+            }
+          ],
+          "config": {
+            "logLevel": "info"
+          }
+        },
+        "tenant02": {},
+        "tenant03": {}
+      },
+      "config": {
+        "logLevel": "info"
+      }
+    },
+    "test.archura.io": {},
+    "staging.archura.io": {}
+  },
+  "config": {
+    "logLevel": "info"
+  }
+}
