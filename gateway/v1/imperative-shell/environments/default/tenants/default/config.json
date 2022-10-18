@@ -41,7 +41,7 @@
                 "name": "io.archura.platform.imperativeshell.handler.SimpleFunction",
                 "version": "0.0.1",
                 "config": {
-                    "JSON_URL": "http://localhost:9090/sono.json",
+                    "JSON_URL": "http://192.168.68.111:9090/sono.json",
                     "topicName": "movies"
                 }
             }

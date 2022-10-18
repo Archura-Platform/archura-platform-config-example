@@ -1,0 +1,20 @@
+{
+    "pre": [
+    ],
+    "post": [
+    ],
+    "routes": {
+        "*": {
+            "pre": [],
+            "post": [],
+            "function": {
+                "name": "io.archura.platform.imperativeshell.handler.SimpleFunction",
+                "version": "0.0.1",
+                "config": {
+                    "JSON_URL": "http://localhost:9090/sono.json",
+                    "topicName": "movies"
+                }
+            }
+        }
+    }
+}

@@ -1,50 +1,49 @@
 {
-    "pre": [
-        {
-            "name": "io.archura.platform.imperativeshell.global.pre.filter.MultiEnvironment",
-            "version": "0.0.1",
-            "config": {
-                "host": {
-                    "groupName": "",
-                    "regex": ".*"
-                },
-                "header": {
-                    "name": "X-Archura-Environment",
-                    "groupName": "",
-                    "regex": ".*"
-                },
-                "path": {
-                    "groupName": "",
-                    "regex": "(?:[^\\/]|\\/\\/)+"
-                }
-            }
+  "pre": [
+    {
+      "name": "io.archura.platform.imperativeshell.global.pre.filter.MultiEnvironment",
+      "version": "0.0.1",
+      "config": {
+        "host": {
+          "groupName": "",
+          "regex": ".*"
         },
-        {
-            "name": "io.archura.platform.imperativeshell.pre.filter.SimplePreFilter",
-            "version": "0.0.1",
-            "config": {
-                "ip": [
-                    "192.168.1.2",
-                    "192.168.1.3"
-                ],
-                "mac": [
-                    "00:0a:95:9d:62:11"
-                ]
-            }
+        "header": {
+          "name": "X-Archura-Environment",
+          "groupName": "",
+          "regex": ".*"
+        },
+        "path": {
+          "groupName": "",
+          "regex": "(?:[^\\/]|\\/\\/)+"
         }
-    ],
-    "post": [
-        {
-            "name": "io.archura.platform.imperativeshell.post.filter.SimplePostFilter",
-            "version": "0.0.1",
-            "config": {}
+      }
+    },
+    {
+      "name": "io.archura.platform.imperativeshell.global.pre.filter.MultiTenant",
+      "version": "0.0.1",
+      "config": {
+        "host": {
+          "groupName": "",
+          "regex": ".*"
+        },
+        "header": {
+          "name": "X-Archura-Tenant",
+          "groupName": "",
+          "regex": ".*"
+        },
+        "path": {
+          "groupName": "",
+          "regex": "(?:[^\\/]|\\/\\/)+"
         }
-    ],
-    "config": {
-        "logLevel": "debug",
-        "redisUrl": "redis://:uhqBjUoHDLkZo7tk6wTtvl3ToViypPhS@redis-15068.c269.eu-west-1-3.ec2.cloud.redislabs.com:15068/0",
-        "codeRepositoryUrl": "http://127.0.0.1:9080",
-        "archuraPlatformToken": "THIS-IS-A-TOKEN",
-        "requestTimeout" : 30
+      }
     }
+  ],
+  "post": [
+    {
+      "name": "io.archura.platform.imperativeshell.post.filter.SimplePostFilter",
+      "version": "0.0.1",
+      "config": {}
+    }
+  ]
 }
