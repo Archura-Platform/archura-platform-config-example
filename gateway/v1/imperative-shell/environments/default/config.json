@@ -1,6 +1,17 @@
 {
     "pre": [
         {
+            "name": "io.archura.platform.imperativeshell.global.pre.filter.MultiTenant",
+            "version": "0.0.1",
+            "config": {
+                "header": {
+                    "name": "X-Archura-Tenant",
+                    "groupName": "",
+                    "regex": ".*"
+                }
+            }
+        },
+        {
             "name": "io.archura.platform.imperativeshell.pre.filter.SimplePreFilter",
             "version": "0.0.1",
             "config": {

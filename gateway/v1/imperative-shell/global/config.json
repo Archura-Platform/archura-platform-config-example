@@ -7,43 +7,25 @@
         "host": {
           "groupName": "",
           "regex": ".*"
-        },
-        "header": {
-          "name": "X-Archura-Environment",
-          "groupName": "",
-          "regex": ".*"
-        },
-        "path": {
-          "groupName": "",
-          "regex": "(?:[^\\/]|\\/\\/)+"
         }
       }
     },
     {
-      "name": "io.archura.platform.imperativeshell.global.pre.filter.MultiTenant",
+      "name": "io.archura.platform.imperativeshell.pre.filter.tracing.TracingFilter",
       "version": "0.0.1",
       "config": {
-        "host": {
-          "groupName": "",
-          "regex": ".*"
-        },
-        "header": {
-          "name": "X-Archura-Tenant",
-          "groupName": "",
-          "regex": ".*"
-        },
-        "path": {
-          "groupName": "",
-          "regex": "(?:[^\\/]|\\/\\/)+"
-        }
+        "SpanHeaderName": "X-A-SpanID",
+        "TraceHeaderName": "X-A-TraceID"
       }
     }
   ],
   "post": [
     {
-      "name": "io.archura.platform.imperativeshell.post.filter.SimplePostFilter",
+      "name": "io.archura.platform.imperativeshell.post.filter.tracing.TracingFilter",
       "version": "0.0.1",
-      "config": {}
+      "config": {
+        "SpanHeaderName": "X-A-SpanID"
+      }
     }
   ]
 }
