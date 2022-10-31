@@ -1,5 +1,16 @@
 {
   "pre": [
+    {
+      "name": "io.archura.platform.imperativeshell.global.pre.filter.MultiTenant",
+      "version": "0.0.1",
+      "config": {
+        "header": {
+          "name": "X-Archura-Tenant",
+          "groupName": "",
+          "regex": ".*"
+        }
+      }
+    }
   ],
   "post": [
   ]
