@@ -1,6 +1,7 @@
 {
   "config": {
     "remoteLogUrl": "http://192.168.68.111:7070",
+    "remoteTraceUrl": "http://192.168.68.111:7070",
     "logLevel": "debug",
     "redisUrl": "redis://:uhqBjUoHDLkZo7tk6wTtvl3ToViypPhS@redis-15068.c269.eu-west-1-3.ec2.cloud.redislabs.com:15068/0",
     "codeRepositoryUrl": "http://192.168.68.111:9080",
